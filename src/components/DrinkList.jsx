@@ -5,7 +5,7 @@ import Drink from "./Drink";
 const DrinkList = () => {
   const { drinks } = useDrink();
   return (
-    <Row>
+    <Row className="mt-5">
       {drinks.map((drink) => (
         <Drink key={drink.idDrink} drink={drink} />
       ))}
